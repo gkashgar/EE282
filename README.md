@@ -13,6 +13,10 @@ hm282 <- data.frame("Age" = c(21,35,29,18), "Name" = c("John", "Sara", "Jake", "
 * hm282[1]
 * data.matrix(hm282[1])
 
+### Question 2 Comments:
+
+You created a dataframe and demonstrated how to access using just the **df[_number_]** method. But you didn't use the other methods: **df[[_number_]]**, **df[,_number_]**, and **matrix[,_number_]**. Give it another shot? Also, your description of the "key" wasn't very descriptive.
+
 ## Q3-I would like you to make a new shared directory for the new DNA-sequencing project and allow the new members to access our project’s shared directory and files in the directory.  Allow them to add any data analysis they have completed, but make sure they cannot delete or remove any file from the project directory. 
 * sudo mkdir /projects/Shared
 * sudo addgroup newgroup
