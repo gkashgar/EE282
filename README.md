@@ -9,10 +9,15 @@ gkashgar@uci.edu
 ### Question 1 Comments: you are correct in how to create a directory, but rmdir Jake, will only remove the Jake folder if there is nothing inside the folder. if you wanted to remove the folder and the contents inside of the jake folder then you would have needed to perfrom a recursive rm i.e. rm -rf Jake where -f means force, and do not show prompts for confirming of deleting each file. 
 
 ## Q2-I have four new team members for the project (hm2820). I need you to create a data frame with their Names and Age. Next, provide me with a list of their Ages (without showing names of each member). 
+```
 hm282 <- data.frame("Age" = c(21,35,29,18), "Name" = c("John", "Sara", "Jake", "Alex"), stringsAsFactors = FALSE)
-* summary(hm282) 
-* hm282[1]
-* data.matrix(hm282[1])
+summary(hm282)  
+hm282[1]
+hm282[[1]]
+hm282[,1]
+data.matrix(hm282[1])
+```
+
 
 ### Question 2 Comments:
 
