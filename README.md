@@ -6,6 +6,7 @@ gkashgar@uci.edu
 * cd RNA282 
 * mkdir Alex 
 * rmdir Jake 
+### Question 1 Comments: you are correct in how to create a directory, but rmdir Jake, will only remove the Jake folder if there is nothing inside the folder. if you wanted to remove the folder and the contents inside of the jake folder then you would have needed to perfrom a recursive rm i.e. rm -rf Jake where -f means force, and do not show prompts for confirming of deleting each file. 
 
 ## Q2-I have four new team members for the project (hm2820). I need you to create a data frame with their Names and Age. Next, provide me with a list of their Ages (without showing names of each member). 
 hm282 <- data.frame("Age" = c(21,35,29,18), "Name" = c("John", "Sara", "Jake", "Alex"), stringsAsFactors = FALSE)
@@ -19,3 +20,7 @@ hm282 <- data.frame("Age" = c(21,35,29,18), "Name" = c("John", "Sara", "Jake", "
 * sudo chown :DNA /projects/Shared
   * sudo adduser Alex DNA
   * sudo chmod 1770 /DNA/Shared
+
+### Question 3 Commments:
+in this case you would only need to use sudo for adding a group as only system administrators can create groups and users.
+Also, it looks like DNA is a group? and a folder? I had a hard time following what you were doing here. Could you please correct what you did here so that the persmissions being set follow what you had requested. Also, please note that when you precede any directory with the "/" character you are telling the system to start at the root directory. i.e. "/". Only system administrators can change the root directory. I did at first assume that the working directory was /projects, but then you also did /DNA/Shared. I wasn't sure if this was supposed to be another folder or a folder inside projects? or a group? Please let me know when you have fixed this, so that I can finish grading Question 3 for you. Thank you. :) Also, please feel free to ask questions about this problem if you need help with anything.
