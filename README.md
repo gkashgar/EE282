@@ -19,11 +19,14 @@ hm282 <- data.frame("Age" = c(21,35,29,18), "Name" = c("John", "Sara", "Jake", "
 You created a dataframe and demonstrated how to access using just the **df[_number_]** method. But you didn't use the other methods: **df[[_number_]]**, **df[,_number_]**, and **matrix[,_number_]**. Give it another shot? Also, your description of the "key" wasn't very descriptive.
 
 ## Q3-I would like you to make a new shared directory for the new DNA-sequencing project and allow the new members to access our project’s shared directory and files in the directory.  Allow them to add any data analysis they have completed, but make sure they cannot delete or remove any file from the project directory. 
-* sudo mkdir /projects/Shared
-* sudo addgroup newgroup
-* sudo chown :DNA /projects/Shared
-  * sudo adduser Alex DNA
-  * sudo chmod 1770 /DNA/Shared
+
+```
+sudo mkdir DNA/projects/Shared
+sudo addgroup newgroup
+sudo chown :newgroup DNA/projects/Shared
+sudo usermod -aG newgroup Alex
+sudo chmod 770 DNA/projects/Shared
+```
 
 ### Question 3 Commments:
 in this case you would only need to use sudo for adding a group as only system administrators can create groups and users.
